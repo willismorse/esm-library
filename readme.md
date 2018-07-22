@@ -30,6 +30,7 @@ In this library all hierarchical module specifiers are specified as absolute pat
 
 In any codebase with broad deep hierarchies, relative paths will quickly become unreadable and unmanageable. Absolute paths are preferable for readability and because that's the way all other language module systems do it.
 
+# Setting up tools
 In order to make these faux absolute paths work in practice, ALL tools that will view this code must be informed about the base folder. 
 
 ## Webstorm/IntelliJ
