@@ -15,7 +15,7 @@ yarn publish
 
 This library is an ESM bundle that is published as a node package called `library`. Obviously, you won't be able to publish this to the public npm registry with this package name; I recommend running a docker image of [Verdaccio](https://github.com/verdaccio/verdaccio) locally to try this out.
 
-_You might be tempted to use the `node link` trick to bypass using a real npm registry. However, this uses a symlink  that can confuse tooling such as VSCode and Webstorm: since you aren't changing versions in package.json and since the symlink itself doesn't change modification data reliably when the directory contents change, any tool that relies on a filewatcher that is looking at package.json or on the package folder within node_modules may be confused. Webstorm in particular does not like this. YMMV, just be sure to exercise it carefully before relying it; not recognizing changes to your package can result in really subtle and hard-to-diagnose problems._
+_You might be tempted to use the `node link` trick to bypass using a real npm registry. However, this uses a symlink  that can confuse tooling such as VSCode and Webstorm: since you aren't changing versions in package.json and since the symlink itself doesn't change modification date reliably when the directory contents change, any tool that relies on a filewatcher that is looking at package.json or on the package folder within node_modules may be confused. Webstorm in particular does not like this. YMMV, just be sure to exercise it carefully before relying it; not recognizing changes to your package can result in really subtle and hard-to-diagnose problems._
 
 # Implementation notes
 
