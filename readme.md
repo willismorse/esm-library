@@ -28,7 +28,7 @@ This library tests the ability to produce (and subsequently consume) code that c
 
 In this library all hierarchical module specifiers are specified as absolute paths, in the form `Parent/ParentClass`. Note that this is technically a violation (or hack upon) the strict ESM module specification, which only works out of the box with relative paths. In reality, these "absolute" paths are not really absolute, they are implicitly in the form `<path-to-project>/src/Parent/ParentClass`
 
-In any codebase with broad deep hierarchies, relative paths will quickly become unreadable and unmanageable. Absolute paths are preferable for readability and because that's the way all other language module systems do it.
+In any codebase with broad deep hierarchies, relative paths will quickly become unreadable and unmanageable. Absolute paths are preferable for readability and because that's the way all other language module systems do it. One reasonable exception is probably using relative paths when the files are in the same directory.
 
 # Setting up tools
 In order to make these faux absolute paths work in practice, ALL tools that will view this code must be informed about the base folder. 
