@@ -3,16 +3,22 @@ import StringUtils2 from "utilities-more/StringUtils";
 
 
 export default class ChildClass {
+    get decapitalized() {
+        return this._decapitalized;
+    }
+    get capitalized() {
+        return this._capitalized;
+    }
 
     constructor() {
         console.log("created Child");
 
         let stringUtils = new StringUtils();
 
-        let capitalized = stringUtils.capitalizeString("capitalizeMe");
+        this._capitalized = stringUtils.capitalizeString("capitalizeMe");
 
         let stringUtils2 = new StringUtils2();
 
-        let decapitalized = stringUtils2.decapitalizeString("DacApiTalizeMe");
+        this._decapitalized = stringUtils2.decapitalizeString("DacApiTalizeMe");
     }
 }

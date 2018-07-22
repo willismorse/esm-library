@@ -1,7 +1,7 @@
-import ChildClass from 'Child/ChildClass';
+import ChildClass from 'Parent/Child/ChildClass';
 import ParentClass from 'Parent/ParentClass';
 
 import  StringUtils from 'utilities/StringUtils'
-import  Adder2 from 'utilities-more/StringUtils'
+import  StringUtilsMore from 'utilities-more/StringUtils'
 
-export {ChildClass, ParentClass, StringUtils, Adder2};
+export {ChildClass, ParentClass, StringUtils, StringUtilsMore};
